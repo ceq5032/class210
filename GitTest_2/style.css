@@ -1,0 +1,33 @@
+
+body {
+    font-family: Geneva, sans-serif;
+    background-color: grey;
+    color: darkblue;
+}
+
+h1 {
+    padding: 1.2em;
+}
+
+h2{
+    padding: 1.2em;
+}
+p {
+    padding : .5em;
+}
+
+.svg-one, svg-two{
+    position: absolute;
+    
+} 
+.svg-three{
+     position: absolute;
+    
+    
+}
+
+svg-four{
+    position: absolute;
+    padding-right: 5em;
+  
+   }
