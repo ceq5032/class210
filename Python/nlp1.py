@@ -3,15 +3,15 @@
 # play with spaCy
 # If necessary at Git Bash or terminal do: pip3 install spacy
 
-import batman-returns_final.txt
+import spacy
 # Need line 8 the first time: Then comment it out after the first time you run it:
 nlp = spacy.cli.download("en_core_web_sm")
 nlp = spacy.load('en_core_web_sm')
 
-avatarSpeeches = open('avatarSpeeches.txt', 'r', encoding='utf8')
-words = avatarSpeeches.read()
-wordstrings = str(words)
-print(wordstrings)
+batmanSpeeches = open('batman-returns_final.txt', 'r', encoding='utf8')
+words = batmanSpeeches.read()
+wordStrings = str(words)
+print(wordStrings)
 
 # count=0
 # for w in words:
@@ -19,8 +19,8 @@ print(wordstrings)
 #     print(count, ": ", w)
 
 # start playing with spaCy and nlp:
-avatarWords = nlp(wordstrings)
-for token in avatarWords:
+batmanWords = nlp(wordStrings)
+for token in batmanWords:
     # if token.pos_ == "VERB":
     print(token.text, "---->", token.pos_, ":::::", token.lemma_)
 
